@@ -14,6 +14,10 @@
 		266639011C0AC3AA00543A48 /* AppConekta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 266638FF1C0AC3AA00543A48 /* AppConekta.xcdatamodeld */; };
 		266639031C0AC3AA00543A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266639021C0AC3AA00543A48 /* Assets.xcassets */; };
 		266639061C0AC3AA00543A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266639041C0AC3AA00543A48 /* LaunchScreen.storyboard */; };
+		2666391A1C0AD36800543A48 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 266639101C0AD36800543A48 /* Card.m */; settings = {ASSET_TAGS = (); }; };
+		2666391B1C0AD36800543A48 /* Conekta.m in Sources */ = {isa = PBXBuildFile; fileRef = 266639121C0AD36800543A48 /* Conekta.m */; settings = {ASSET_TAGS = (); }; };
+		2666391C1C0AD36800543A48 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 266639171C0AD36800543A48 /* Connection.m */; settings = {ASSET_TAGS = (); }; };
+		2666391D1C0AD36800543A48 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = 266639191C0AD36800543A48 /* Token.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,15 @@
 		266639021C0AC3AA00543A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266639051C0AC3AA00543A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		266639071C0AC3AA00543A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2666390F1C0AD36800543A48 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		266639101C0AD36800543A48 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		266639111C0AD36800543A48 /* Conekta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conekta.h; sourceTree = "<group>"; };
+		266639121C0AD36800543A48 /* Conekta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conekta.m; sourceTree = "<group>"; };
+		266639131C0AD36800543A48 /* Conekta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Conekta.xcodeproj; sourceTree = "<group>"; };
+		266639161C0AD36800543A48 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		266639171C0AD36800543A48 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		266639181C0AD36800543A48 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		266639191C0AD36800543A48 /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Token.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +57,7 @@
 		266638E71C0AC3AA00543A48 = {
 			isa = PBXGroup;
 			children = (
+				2666390E1C0AD36800543A48 /* Conekta */,
 				2666390D1C0AC3CB00543A48 /* Main */,
 				266638F21C0AC3AA00543A48 /* AppConekta */,
 				266638F11C0AC3AA00543A48 /* Products */,
@@ -88,6 +102,30 @@
 				266638F71C0AC3AA00543A48 /* AppDelegate.m */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		2666390E1C0AD36800543A48 /* Conekta */ = {
+			isa = PBXGroup;
+			children = (
+				2666390F1C0AD36800543A48 /* Card.h */,
+				266639101C0AD36800543A48 /* Card.m */,
+				266639111C0AD36800543A48 /* Conekta.h */,
+				266639121C0AD36800543A48 /* Conekta.m */,
+				266639131C0AD36800543A48 /* Conekta.xcodeproj */,
+				266639161C0AD36800543A48 /* Connection.h */,
+				266639171C0AD36800543A48 /* Connection.m */,
+				266639181C0AD36800543A48 /* Token.h */,
+				266639191C0AD36800543A48 /* Token.m */,
+			);
+			name = Conekta;
+			path = AppConekta/Conekta;
+			sourceTree = "<group>";
+		};
+		266639141C0AD36800543A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +173,12 @@
 			mainGroup = 266638E71C0AC3AA00543A48;
 			productRefGroup = 266638F11C0AC3AA00543A48 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 266639141C0AD36800543A48 /* Products */;
+					ProjectRef = 266639131C0AD36800543A48 /* Conekta.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				266638EF1C0AC3AA00543A48 /* AppConekta */,
@@ -160,6 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2666391A1C0AD36800543A48 /* Card.m in Sources */,
+				2666391C1C0AD36800543A48 /* Connection.m in Sources */,
+				2666391B1C0AD36800543A48 /* Conekta.m in Sources */,
+				2666391D1C0AD36800543A48 /* Token.m in Sources */,
 				266638FB1C0AC3AA00543A48 /* Start.m in Sources */,
 				266639011C0AC3AA00543A48 /* AppConekta.xcdatamodeld in Sources */,
 				266638F81C0AC3AA00543A48 /* AppDelegate.m in Sources */,
@@ -275,6 +323,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppConekta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Conekta",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = margom.AppConekta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -286,6 +338,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppConekta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Conekta",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = margom.AppConekta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
