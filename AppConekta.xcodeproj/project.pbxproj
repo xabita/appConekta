@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		266638F51C0AC3AA00543A48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 266638F41C0AC3AA00543A48 /* main.m */; };
 		266638F81C0AC3AA00543A48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 266638F71C0AC3AA00543A48 /* AppDelegate.m */; };
-		266638FB1C0AC3AA00543A48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266638FA1C0AC3AA00543A48 /* ViewController.m */; };
+		266638FB1C0AC3AA00543A48 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 266638FA1C0AC3AA00543A48 /* Start.m */; };
 		266638FE1C0AC3AA00543A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266638FC1C0AC3AA00543A48 /* Main.storyboard */; };
 		266639011C0AC3AA00543A48 /* AppConekta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 266638FF1C0AC3AA00543A48 /* AppConekta.xcdatamodeld */; };
 		266639031C0AC3AA00543A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266639021C0AC3AA00543A48 /* Assets.xcassets */; };
@@ -19,10 +19,10 @@
 /* Begin PBXFileReference section */
 		266638F01C0AC3AA00543A48 /* AppConekta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppConekta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266638F41C0AC3AA00543A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		266638F61C0AC3AA00543A48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		266638F71C0AC3AA00543A48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		266638F91C0AC3AA00543A48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		266638FA1C0AC3AA00543A48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		266638F61C0AC3AA00543A48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppConekta/AppDelegate.h; sourceTree = "<group>"; };
+		266638F71C0AC3AA00543A48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppConekta/AppDelegate.m; sourceTree = "<group>"; };
+		266638F91C0AC3AA00543A48 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		266638FA1C0AC3AA00543A48 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		266638FD1C0AC3AA00543A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		266639001C0AC3AA00543A48 /* AppConekta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppConekta.xcdatamodel; sourceTree = "<group>"; };
 		266639021C0AC3AA00543A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +44,7 @@
 		266638E71C0AC3AA00543A48 = {
 			isa = PBXGroup;
 			children = (
+				2666390D1C0AC3CB00543A48 /* Main */,
 				266638F21C0AC3AA00543A48 /* AppConekta */,
 				266638F11C0AC3AA00543A48 /* Products */,
 			);
@@ -60,10 +61,8 @@
 		266638F21C0AC3AA00543A48 /* AppConekta */ = {
 			isa = PBXGroup;
 			children = (
-				266638F61C0AC3AA00543A48 /* AppDelegate.h */,
-				266638F71C0AC3AA00543A48 /* AppDelegate.m */,
-				266638F91C0AC3AA00543A48 /* ViewController.h */,
-				266638FA1C0AC3AA00543A48 /* ViewController.m */,
+				266638F91C0AC3AA00543A48 /* Start.h */,
+				266638FA1C0AC3AA00543A48 /* Start.m */,
 				266638FC1C0AC3AA00543A48 /* Main.storyboard */,
 				266639021C0AC3AA00543A48 /* Assets.xcassets */,
 				266639041C0AC3AA00543A48 /* LaunchScreen.storyboard */,
@@ -80,6 +79,15 @@
 				266638F41C0AC3AA00543A48 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2666390D1C0AC3CB00543A48 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				266638F61C0AC3AA00543A48 /* AppDelegate.h */,
+				266638F71C0AC3AA00543A48 /* AppDelegate.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266638FB1C0AC3AA00543A48 /* ViewController.m in Sources */,
+				266638FB1C0AC3AA00543A48 /* Start.m in Sources */,
 				266639011C0AC3AA00543A48 /* AppConekta.xcdatamodeld in Sources */,
 				266638F81C0AC3AA00543A48 /* AppDelegate.m in Sources */,
 				266638F51C0AC3AA00543A48 /* main.m in Sources */,
